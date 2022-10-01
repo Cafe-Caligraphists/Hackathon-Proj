@@ -12,7 +12,7 @@
 }
 
 .input-space {
-  padding-left: 100px;
+  padding-left: 160px;
 }
 
 .input-lbl {
@@ -20,14 +20,14 @@
 }
 
 .inputs {
-  width: 300px;
+  width: 250px;
   height: 65px;
   font-size: 35px;
   align-self: center;
 }
 
 .button {
-  width: 120px;
+  width: 130px;
   height: 65px;
   font-size: 25px;
 }

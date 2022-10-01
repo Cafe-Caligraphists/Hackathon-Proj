@@ -8,7 +8,9 @@ function App() {
       <body>
         <div className="input-space">
           <label className="input-lbl" for="userMoney">Current Balance: </label>
-          <input className="inputs" placeholder="i.e. 8000.25" type="text" id="userMoney" name="userMoney"/><nbsp/>
+          <input className="inputs" placeholder="i.e. 8000.25" type="text" id="userMoney" name="userMoney"/>
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
           <input className="button" type="submit" value="Submit"></input>
         </div>
       </body>
