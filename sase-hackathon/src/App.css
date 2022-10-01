@@ -40,5 +40,12 @@
 .title {
   text-align: center;
   text-shadow: #282c34;
-  font-size: 40px;
+  font-size: 60px;
+  margin: 0 30 0 60;
+}
+
+.bg {
+  background-image: url("moneyBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

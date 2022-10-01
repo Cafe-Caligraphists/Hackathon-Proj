@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="bg">
       <header className="title">Money Mapper</header>
     </div>
   );
