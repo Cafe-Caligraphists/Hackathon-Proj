@@ -3,7 +3,11 @@ import './App.css';
 function App() {
   return (
     <div className="bg">
-      <header className="title">Money Mapper</header>
+      <header>Program by Cafe Calligraphists</header>
+      <h3 className="title">Money Mapper</h3>
+      <body>
+        <p>Text</p>
+      </body>
     </div>
   );
 }
