@@ -41,7 +41,7 @@ function App() {
           <iframe className="calc" src="https://www.desmos.com/calculator"></iframe>
         </div>
       </body>
-    </div>
+    </div>  
   );
 }
 
