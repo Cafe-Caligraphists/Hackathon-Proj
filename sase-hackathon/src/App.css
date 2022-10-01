@@ -1,7 +1,7 @@
 .title {
   text-align: center;
   font-weight: bold;
-  font-size: 55px;
+  font-size: 60px;
   text-anchor: start;
 }
 
@@ -9,4 +9,25 @@
   background-image: url("moneyBg.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.input-space {
+  padding-left: 100px;
+}
+
+.input-lbl {
+  font-size: 25px;
+}
+
+.inputs {
+  width: 300px;
+  height: 65px;
+  font-size: 35px;
+  align-self: center;
+}
+
+.button {
+  width: 120px;
+  height: 65px;
+  font-size: 25px;
 }
