@@ -4,34 +4,34 @@ import { Line } from "react-chartjs-2";
 
 function App() {
 
-  var coordinatePairs = []; //empty array with ordered pairs
+  var coordinatePairs = [];
   var currentBalance; 
 
-  class newBalance { //constructor
+  class newBalance {
     constructor(moneySpent, time) {
       this.time = time;
       this.moneySpent = moneySpent;
 
     } 
   }
-  function assignBalance() { //gets the current balance from the text box
-    App.currentBalance = document.getElementById('user-money').value;
+  function assignBalance() {
+    currentBalance = document.getElementById('user-money').value;
   }
 
-  function buttonPressed() { //gets the money spent 
-    var temp = new newBalance(1, assignBalance.currentbalance - document.getElementById('user-spent').value); //creates ordered pairs
-    coordinatePairs.push(temp); 
-    var netChange = Math.integral(); 
-    currentBalance -= document.getElementById('user-spent').value;
+  function buttonPressed() {
+    //read input somehow
+    var temp = new newBalance(1, document.getElementById('user-spent').value);
+    coordinatePairs.push(temp);
+    var netChange = Math.integral();
 
   }
 
-  function sum(endbound) { //adds all the values in the array except for the first and last ones
+  function sum(endbound) {
     for (let i = 1; i < endbound; i++) {
       var sum = 0;
       sum += coordinatePairs[i].moneySpent;
     }
-    sum = ((Math.integral.g)/2) * ((sum * 2) + coordinatePairs[0] + coordinatePairs[endbound]); //reimann sums
+    sum = ((Math.integral.g)/2) * ((sum * 2) + coordinatePairs[0] + coordinatePairs[endbound]);
   }
 
   Math.integral=function(x, y)  
@@ -39,20 +39,13 @@ function App() {
     var xp, s, result = 0, g = (x) / 10;
     for(var i = 0; i < 10; i++)
     {
-      s = sum(coordinatePairs.length) - sum(coordinatePairs.length-1); //finds the difference between two points
+      xp = xa + g; //width of rectangle per iterations
+      s = sum(coordinatePairs.length) - sum(coordinatePairs.length-1);
       result += s;
     }
 
     return result;
     
-  }
-
-  var v = document.getElementById("content-box");
-
-  if (buttonPressed.netChange < 0) {
-    v.style.display = "block";
-  } else {
-    v.style.display = "none";
   }
 
   return (
@@ -89,12 +82,11 @@ function App() {
 
         </div>
 
-        <br/>
-
-        <div className="calc-place">
-          <iframe className="calc" src="https://www.desmos.com/calculator"></iframe>
+        <div>
+          
         </div>
-        <div class="content-box" id="content-box">Content box</div>
+
+        <br/>
       </body>
     </div>  
   );
