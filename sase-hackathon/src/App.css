@@ -10,3 +10,24 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.input-space {
+  padding-left: 160px;
+}
+
+.input-lbl {
+  font-size: 25px;
+}
+
+.inputs {
+  width: 250px;
+  height: 65px;
+  font-size: 35px;
+  align-self: center;
+}
+
+.button {
+  width: 130px;
+  height: 65px;
+  font-size: 25px;
+}
