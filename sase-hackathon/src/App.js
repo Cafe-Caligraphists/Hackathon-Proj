@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <header>Money Mapper</header>
+      <header className="title">Money Mapper</header>
     </div>
   );
 }
