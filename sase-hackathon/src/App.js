@@ -4,10 +4,13 @@ function App() {
   return (
     <div className="bg">
 
-      <header>Program by the Cafe Calligraphists</header>
-      <h3 className="title">Money Mapper</h3>
+      <header>
+        Program by the Cafe Calligraphists
+      </header>
 
       <body>
+
+      <h3 className="title">Money Mapper</h3>
 
         <div className="input-space">
 
@@ -30,6 +33,12 @@ function App() {
               &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
           <input className="button" type="submit" id="spent-submit" value="Submit"></input>
 
+        </div>
+
+        <br/>
+
+        <div className="calc-place">
+          <iframe className="calc" src="https://www.desmos.com/calculator"></iframe>
         </div>
       </body>
     </div>

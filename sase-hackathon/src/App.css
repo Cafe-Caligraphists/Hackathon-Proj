@@ -31,3 +31,12 @@
   height: 65px;
   font-size: 25px;
 }
+
+.calc-place {
+  text-align: center;
+}
+
+.calc {
+  height: 600px;
+  width: 1000px;
+}
