@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sase-hackathon/static/css/main.4a1d2c8a.css",
-    "main.js": "/sase-hackathon/static/js/main.b906f03a.js",
+    "main.css": "/sase-hackathon/static/css/main.d11e3a56.css",
+    "main.js": "/sase-hackathon/static/js/main.5a01d418.js",
     "static/js/787.426028f4.chunk.js": "/sase-hackathon/static/js/787.426028f4.chunk.js",
     "static/media/moneyBg.png": "/sase-hackathon/static/media/moneyBg.157edbaf6342e9cd364c.png",
     "index.html": "/sase-hackathon/index.html",
-    "main.4a1d2c8a.css.map": "/sase-hackathon/static/css/main.4a1d2c8a.css.map",
-    "main.b906f03a.js.map": "/sase-hackathon/static/js/main.b906f03a.js.map",
+    "main.d11e3a56.css.map": "/sase-hackathon/static/css/main.d11e3a56.css.map",
+    "main.5a01d418.js.map": "/sase-hackathon/static/js/main.5a01d418.js.map",
     "787.426028f4.chunk.js.map": "/sase-hackathon/static/js/787.426028f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a1d2c8a.css",
-    "static/js/main.b906f03a.js"
+    "static/css/main.d11e3a56.css",
+    "static/js/main.5a01d418.js"
   ]
 }
