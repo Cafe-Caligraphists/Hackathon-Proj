@@ -1,8 +1,48 @@
 import './App.css';
 import React from 'react';
-import { Line } from "react-chartjs-2";
+import { Line } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 function App() {
+  const labels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+  
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'My First dataset',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+  
+  const options = {};
 
   var coordinatePairs = [];
   var currentBalance; 
@@ -54,8 +94,12 @@ function App() {
       <header>
         Program by the Cafe Calligraphists
       </header>
-
       <body>
+      <script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+      <script src="App.js"></script>
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
 
       <h3 className="title">Money Mapper</h3>
 
@@ -68,7 +112,6 @@ function App() {
           <input className="button" type="submit" id="money-submit" value="Submit" onclick="buttonPressed()"></input>
 
         </div>
-
         <br/><br/><br/>
 
         <div className="input-space">
@@ -82,33 +125,23 @@ function App() {
 
         </div>
 
+<<<<<<< HEAD
         <div>
           
         </div>
 
         <br/>
+=======
+        <Line data={data}></Line>
+
+        <br/>
+
+        
+
+>>>>>>> 805bb978e6fb35efe4b2475630a8bb80977b937b
       </body>
     </div>  
   );
 }
-
-const data = {
-  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
-  datasets: [
-    {
-      label: "First dataset",
-      data: [33, 53, 85, 41, 44, 65],
-      fill: true,
-      backgroundColor: "rgba(75,192,192,0.2)",
-      borderColor: "rgba(75,192,192,1)"
-    },
-    {
-      label: "Second dataset",
-      data: [33, 25, 35, 51, 54, 76],
-      fill: false,
-      borderColor: "#742774"
-    }
-  ]
-};
 
 export default App;
