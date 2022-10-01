@@ -65,7 +65,7 @@ function App() {
     var netChange = Math.integral();
 
   }
-
+  
   function sum(endbound) {
     for (let i = 1; i < endbound; i++) {
       var sum = 0;
